@@ -83,7 +83,6 @@
 
 ## Love calculator
 
-
 """
 Love Calculator
 
@@ -124,50 +123,33 @@ Print: "Your score is 53."
 # Don't change the code below
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
-name1 = name1.lower()
+# name1 = name1.lower()
 name2 = input("What is their name? \n")
-name2 = name2.lower()
+# name2 = name2.lower()
+
+combined_name = name1 + name2
+new_name = combined_name.lower()
 # Don't change the code above
 
 # Get total count for TRUE from two names
-countTRUE1 = 0
-letterT = name1.count('t')
-letterR = name1.count('r')
-letterU = name1.count('u')
-letterE = name1.count('e')
-countTRUE1 = countTRUE1+ letterT + letterR + letterU + letterE
-
-countTRUE2 = 0
-letterT = name2.count('t')
-letterR = name2.count('r')
-letterU = name2.count('u')
-letterE = name2.count('e')
-countTRUE2 = countTRUE2 + letterT + letterR + letterU + letterE
-
-totalTRUE = countTRUE1 + countTRUE2
-print("TRUE:", totalTRUE)
+letterT = new_name.count('t')
+letterR = new_name.count('r')
+letterU = new_name.count('u')
+letterE = new_name.count('e')
+countTRUE = letterT + letterR + letterU + letterE
+print("TRUE:", countTRUE)
 
 # Get total count for LOVE from two names
-countLOVE1 = 0
-letterL = name1.count('l')
-letterO = name1.count('o')
-letterV = name1.count('v')
-letterE = name1.count('e')
-countLOVE1 = countLOVE1+ letterL + letterO + letterV + letterE
-
-countLOVE2 = 0
-letterL = name2.count('l')
-letterO = name2.count('o')
-letterV = name2.count('v')
-letterE = name2.count('e')
-countLOVE2 = countLOVE2+ letterL + letterO + letterV + letterE
-
-totalLOVE = countLOVE1 + countLOVE2
-print("LOVE:", totalLOVE)
+letterL = new_name.count('l')
+letterO = new_name.count('o')
+letterV = new_name.count('v')
+letterE = new_name.count('e')
+countLOVE = letterL + letterO + letterV + letterE
+print("LOVE:", countLOVE)
 
 # Convert scores to string
-scoreTRUE = str(totalTRUE)
-scoreLOVE = str(totalLOVE)
+scoreTRUE = str(countTRUE)
+scoreLOVE = str(countLOVE)
 score = scoreTRUE + scoreLOVE
 print("score:", score)
 
@@ -180,3 +162,4 @@ elif result > 40 and result < 50:
     print("You guys are alright.")
 else:
     print(f"Your score is {result}.")
+
