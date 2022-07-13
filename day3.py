@@ -83,7 +83,7 @@
 
 ## Love calculator
 
-"""
+'''
 Love Calculator
 
 To work out the love score between two people:
@@ -118,48 +118,50 @@ Total = 3
 Love Score = 53
 
 Print: "Your score is 53."
-"""
+'''
 
-# Don't change the code below
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-# name1 = name1.lower()
-name2 = input("What is their name? \n")
-# name2 = name2.lower()
+# # Don't change the code below
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n")
+# # name1 = name1.lower()
+# name2 = input("What is their name? \n")
+# # name2 = name2.lower()
 
-combined_name = name1 + name2
-new_name = combined_name.lower()
-# Don't change the code above
+# combined_name = name1 + name2
+# new_name = combined_name.lower()
+# # Don't change the code above
 
-# Get total count for TRUE from two names
-letterT = new_name.count('t')
-letterR = new_name.count('r')
-letterU = new_name.count('u')
-letterE = new_name.count('e')
-countTRUE = letterT + letterR + letterU + letterE
-print("TRUE:", countTRUE)
+# # Get total count for TRUE from two names
+# letterT = new_name.count('t')
+# letterR = new_name.count('r')
+# letterU = new_name.count('u')
+# letterE = new_name.count('e')
+# countTRUE = letterT + letterR + letterU + letterE
+# print("TRUE:", countTRUE)
 
-# Get total count for LOVE from two names
-letterL = new_name.count('l')
-letterO = new_name.count('o')
-letterV = new_name.count('v')
-letterE = new_name.count('e')
-countLOVE = letterL + letterO + letterV + letterE
-print("LOVE:", countLOVE)
+# # Get total count for LOVE from two names
+# letterL = new_name.count('l')
+# letterO = new_name.count('o')
+# letterV = new_name.count('v')
+# letterE = new_name.count('e')
+# countLOVE = letterL + letterO + letterV + letterE
+# print("LOVE:", countLOVE)
 
-# Convert scores to string
-scoreTRUE = str(countTRUE)
-scoreLOVE = str(countLOVE)
-score = scoreTRUE + scoreLOVE
-print("score:", score)
+# # Convert scores to string
+# scoreTRUE = str(countTRUE)
+# scoreLOVE = str(countLOVE)
+# score = scoreTRUE + scoreLOVE
+# print("score:", score)
 
-# interpret results
-result = int(score)
-# print(type(result))
-if result < 10 or result > 90:
-    print("Like coke and mentos!")
-elif result > 40 and result < 50:
-    print("You guys are alright.")
-else:
-    print(f"Your score is {result}.")
+# # interpret results
+# result = int(score)
+# # print(type(result))
+# if result < 10 or result > 90:
+#     print("Like coke and mentos!")
+# elif result > 40 and result < 50:
+#     print("You guys are alright.")
+# else:
+#     print(f"Your score is {result}.")
+
+########################################################################
 
