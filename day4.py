@@ -10,24 +10,22 @@ import random
 
 ############################################################
 
-# Provide a list of names, then draw one person at random.
+# Prompt for a list of names, then draw one person at random to pay the bill!
 
 # take input as a string
-names_list = input("Provide a list of 3 names separated by a comma. \n")
+names_list = input("Provide a list of names separated by a comma. \n")
 print("You provided:", names_list)
 
-# split each name separated by commas and create a list
+# split each name separated by a comma and create a list
 list_csv = names_list.split(", ")
+print("number of names -->", len(list_csv))
+
+number_people = len(list_csv)
 # print("list_csv:", list_csv)
 
-# draw a number at random
-random_integer = random.randint(1, 3)
+# draw a number at random to represent random person to be drawn
+random_integer = random.randint(1, number_people)
 # print("random integer -->", random_integer)
 
-# assign numbers to names
-if random_integer == 1:
-    print(list_csv[0], "pays for dinner!")
-elif random_integer == 2:
-    print(list_csv[1], "pays for dinner!")
-else:
-    print(list_csv[2], "pays for dinner!")
+# get the name of person from the list by using their index
+print(list_csv[random_integer - 1], "pays for dinner!")
